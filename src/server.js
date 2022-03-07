@@ -15,6 +15,9 @@ app.use(signup);
 app.use(signin);
 
 
+app.get('/',(req,res)=>{
+    res.send('home route');
+})
 
 app.use('*',err404);
 
